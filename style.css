@@ -1,0 +1,46 @@
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+    }
+    /* ----- LANDING PAGE WRAPPER ----- */
+    .landing-bg {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('images/moon.jpg'); /* Replace with the path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 10rem;
+    }
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      margin-bottom: 10rem;
+    }
+    .ribbon {
+      background: linear-gradient(45deg, #ff69b4, #ff1493, #c71585);
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
+      color: white;
+      font-size: 1.2rem;
+      padding: 1.5rem 3.5rem;
+      border-radius: 16px;
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      border: none;
+      outline: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .ribbon:hover {
+      transform: scale(1.08);
+      box-shadow: 0 18px 35px rgba(255, 105, 180, 0.6);
+    }

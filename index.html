@@ -4,76 +4,18 @@
   <meta charset="UTF-8">
   <title>Hudha's Birthday</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      font-family: 'Poppins', sans-serif;
-    }
-    /* ----- LANDING PAGE WRAPPER ----- */
-    .landing-bg {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      /* 🌌 Highlighted: Replace this with your space/star/planet image later! */
-      background-image: url('images/moon.jpg'); /* Replace with the path to your image */
-      /* Example for later: background-image: url('stars-planets-bg.jpg'); */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .ribbon {
-      background: linear-gradient(45deg, #ff69b4, #ff1493, #c71585);
-      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
-      color: white;
-      font-size: 1.2rem;
-      padding: 1.5rem 3.5rem;
-      border-radius: 16px;
-      cursor: pointer;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-      border: none;
-      outline: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .ribbon:hover {
-      transform: scale(1.08);
-      box-shadow: 0 18px 35px rgba(255, 105, 180, 0.6);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div class="landing-bg">
-    <!-- 🌈 RIBBON: User clicks or swipes to open -->
+    <div class="title">Hey</div>
     <div class="ribbon" id="ribbon">
-      Swipe to Open
+      
+    </div>
+   
     </div>
   </div>
-av
-  <script>
-    // Placeholder for swipe/click logic
-    document.getElementById('ribbon').addEventListener('click', function() {
-      alert('Door animation will appear next!'); // Replace with door animation later
-    });
-
-    // Swipe support for mobile
-    let startY = 0;
-    document.getElementById('ribbon').addEventListener('touchstart', function(e) {
-      startY = e.touches[0].clientY;
-    });
-    document.getElementById('ribbon').addEventListener('touchmove', function(e) {
-      let currentY = e.touches[0].clientY;
-      let diff = startY - currentY;
-      if (diff > 50) {
-        alert('Door animation will appear next!'); // Replace with animation trigger later
-      }
-    });
-  </script>
+ <script src="script.js"></script>
 </body>
 </html>
